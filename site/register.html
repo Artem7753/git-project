@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        body {
+            background-color: black
+        }
+        .one {
+            background-image: url(fon3.jpg);
+        }
+        h1 {
+           color: yellow
+        }
+        h2 {
+           color: yellow
+        }
+        h3 {
+           color: yellow
+        } 
+        label
+        {
+            color: yellow
+        }
+        legend
+        {
+            color: yellow
+        }
+        .two
+        {
+            height: 30px;
+            width: 200px; 
+            color: red
+        }
+        b{
+            color: yellow
+        }
+    </style>
+    <body>
+    <h1 align="center">&#x262d;Регистрация!</h1>
+    <hr/>
+        <h2 align="center">Спасибо за пройденный опрос, теперь мы предлагаем вам зарегистрироваться на нашем ресурсе.</h2>
+        <fieldset>
+        <legend>Введите ваше ФИО</legend>
+            <label for="FIO">ФИО
+            <input type="text" id="FIO" placeholder="Петров П.П.">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Пол</legend>
+            <b>Пол:</b>
+            <label for="gendur">&#x2642;
+            <input type="radio" id="gendur" name="a" checked>
+            </label>
+            <label for="gendur2">&#x2640;
+            <input type="radio" id="gendur2" name="a">
+            </label>
+            </fieldset>
+            <fieldset>
+            <legend>Год рождения</legend>
+            <label for="date">Введите дату
+            <input type="date" id="date">      
+            </label>
+            </fieldset>
+            <fieldset>
+            <legend>Контактный телефон</legend>
+            <label for="num">Введите номер
+            <input type="tel" id="num" placeholder="+79xxxxxxxxx">      
+            </label>
+            </fieldset>
+            <fieldset>
+            <legend>Почта</legend>
+            <label for="mail">Введите почту
+            <input type="email" id="mail" placeholder="putin@medvedev.ru">      
+            </label>
+            </fieldset> 
+            <br/><br/>
+            <fieldset>
+        <legend>Введите логин и пароль для пользования ресурсом</legend>
+            <label for="log">Логин
+            <input type="text" id="log" placeholder="Петров П.П.">
+            </label>
+            <label for="pas">Пароль
+            <input type="password" id="pas">
+            </label>
+        </fieldset>
+                    <label for="ck">Вы хотели бы получать уведомления по почте?
+            <input type="checkbox" id="ck">
+            </label>
+        <br/>
+         <a href="project.html"><h1 align="center"><input class="two" type="button" value="Зарегистрироваться"></h1></a><hr/>
+         <h3 align="center">&copy; Все права защищены!</h3>
+    </body>
+</html>
