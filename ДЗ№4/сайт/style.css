@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    margin:0;
+    height: 100%;
+}
+
+.header {
+    background: darkgrey;
+    padding: 15;
+    color: #00ff80;
+    position: fixed;
+    width: 100%;
+}
+.menu 
+{
+    padding-top: 60px;
+    background: darkgrey;
+}
+
+.menu__list-item
+{
+    display: inline-block;
+    flex-grow: 1;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    color: #00ff80;
+    position: relative;
+    width: 100%;
+}
+.menu__list{
+margin: 0;
+padding: 0px;
+box-sizing: border-box;
+justify-content: space-around;
+}
+.menu__list-item:hover
+{
+    background: lightgray;
+}
+.menu__list-link
+{
+    color:#00ff80;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+
+}
+.menu__list_sub
+{
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+.menu__list_main
+{
+    display: flex;
+    position: relative;
+}
+
+.menu__list-item:hover > .menu__list_sub {
+    background-color: darkgrey;
+    display: block;
+}
+.headText
+{
+float: left;
+width: 25%;
+text-align: center;
+font-size: 30;
+}
+.headSearch
+{
+    float: right;
+    margin-right: 50px;
+    margin-top: 7;
+    
+}
+
+.features
+{
+float: right;
+width: 20%;
+background-color: darkgrey;
+color:#00ff80;
+margin-top: 10;
+}
+.hdT{color:#00ff80;text-decoration: none }
+
+.wrapper
+{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer
+{
+    background-color: darkgrey;
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 15;
+    margin-top: 10;
+
+}
+
+
+.main__pc-1
+{
+    width:200;
+
+    
+}
+.main__pc
+{
+    width: 40%;
+    margin-top:10;
+    margin-left: 20;
+    float: left;
+}
+.pc-text-head
+{
+    color: chocolate;
+    font-family: cursive;
+    font-size: 25;
+    border-top-color: darkgrey;
+    border-top-style:solid;
+}
+.pc-text
+{
+    font-size: 12;
+    font-family:monospace;
+    
+}
+.main
+{
+    flex: 1 0 auto;
+}
+.main-content
+{
+    width: 80%;
+}
+#search ,#foot
+{
+    background:lightgrey;
+}
+#search:focus,#foot:focus
+{
+    background:white;
+}
