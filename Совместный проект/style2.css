@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-direction: row;
     list-style: none;
+    width: 100%;
     
     
 }
@@ -48,7 +49,9 @@ body{
 .wrapper
 {
 background-image: url(img/header-bg.png);
-    height: 670px;
+background-repeat: no-repeat;
+width: 1240px;
+height: 670px;
 }
 
 .menu-nav-link:hover{
@@ -92,6 +95,8 @@ background-image: url(img/header-bg.png);
 
 .about_us-wrapper {
     background: #e3e3e3;
+    width: 1240px;
+    margin-bottom: 20px;
 }
 
 .about__us-title {
