@@ -11,10 +11,7 @@ body {
 }
 
 /*common*/
-.container {
-	width: 1000px;
-	margin:auto;
-}
+
 
 h1,
 h2,
@@ -27,15 +24,6 @@ h6 {
 }
 /*common*/
 
-.services {
-	width: 100%;
-	height: 400px;
-	margin: 60px auto;
-}
-
-.heading {
-	text-align: center;
-}
 
 .heading h2 {
 	font-size: 20px;
@@ -114,7 +102,7 @@ body {
 
 /*common*/
 .container {
-	width: 1240px;
+	width: 1600px;
 	margin:auto;
 }
 
@@ -130,9 +118,10 @@ h6 {
 /*common*/
 
 .services {
-	width: 100%;
+	width: 1140px;
 	height: 400px;
 	margin: 60px auto;
+    margin-bottom: 100px;
 }
 
 .heading {
@@ -242,13 +231,16 @@ ul li a:hover {
 .works {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content:space-around;
+    margin-left: 230px;
+    margin-right: 230px;
 }
 
 .work {
 	width: 360px;
 	height: 320px;
 	margin-bottom: 20px;
+    margin-left: 0;
 }
 
 .work img {
@@ -297,7 +289,5 @@ ul li a:hover {
 	margin-top: 20px;
 	cursor: pointer;
 }
-.nav-wrapper {
-    width: 100%;
-    align-content:flex-end;
+.nav-wr
 }

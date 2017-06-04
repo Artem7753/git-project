@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Roboto Slab', serif;
 }
@@ -8,26 +12,39 @@ body{
 }
 .menu-nav
 {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
+    height: 23px;
     list-style: none;
-    width: 100%;
     
     
 }
 .menu-nav-link
 {
-    padding: 10;
+    
+   height: 23px;
+    padding-right: 30px;
     text-decoration: none;
-    color: white;
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    
 }
 .menu-logo
 {
-    display: flex;
-    padding: 15;
-    margin-right: 100;
-    color: white;
+    padding: 0;
+    margin-top: 40px;
+    margin-left: 230px;
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    height: 23px;
+    width: 91px;
+    
+    
 }
 .header
 {
@@ -37,7 +54,10 @@ body{
 }
 .nav
 {
-    width: 900;
+    width: 555px;
+    margin-left: 490px;
+    height: 23px;
+    margin-top: 40px;
 }
 .nav ul {
     display: flex;
@@ -50,31 +70,39 @@ body{
 {
 background-image: url(img/header-bg.png);
 background-repeat: no-repeat;
-width: 1240px;
-height: 670px;
+width: 1600px;
+height: 770px;
+margin-bottom: 0;
 }
 
 .menu-nav-link:hover{
     background: darkgrey;
 }
 .welcome{
-    margin-top: 200;
-    width: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 250px;
+    width: 1600;
     align-items: center;
 }
 
 .get-start {
     border: 1px;
-    border-style: solid;
-    padding: 10;
+    border-style: solid; 
     color: white;
     text-align: center;
     border-color: white;
-    width: 100;
+    width: 175px;
+    height: 50px;
     align-items: center;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-left: 705px;
+    margin-top: 55px;
+    padding-top: 15px;
 }
 
 .about__us-heading {
@@ -95,36 +123,49 @@ height: 670px;
 
 .about_us-wrapper {
     background: #e3e3e3;
-    width: 1240px;
+    width: 1600px;
     margin-bottom: 20px;
+    height: 852px;
+    position: relative;
 }
 
 .about__us-title {
-    position: relative;
-    padding-top: 20px;
+    font-family: Montserrat;
+color:  #555555;
+font-size: 20px;/* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+line-height: 24px;/* Приближение из-за подстановки шрифтов */
+text-align: center;
 }
 
 .about__us-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-top: 80px;
+    padding-top: 0;
+    display:flex;
+    margin-left: 230px;
+    margin-right: 230px;
+    box-sizing: border-box;
 }
 
 .about__us-main-cont {
     width: 100%;
     margin: 15px;
-    margin-top: 50px;
 }
 
 .about__us-slider {
+    margin: auto;
+    margin-top: 75px;
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+    width: 1140px;
     
 }
 
 .member {
-    width: 100%;
-    margin: 10px;
+    width: 263px;
+    margin: auto;
+    
     justify-content: space-between;
 }
 .member:before{
@@ -155,4 +196,90 @@ height: 670px;
 }
 .member:hover .member-dop {
     display: flex;
+}
+.menu-nav-li {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-logo {
+font-family: Montserrat;
+color:  #ffffff;
+font-size: 48px;/* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+width: 580px;
+margin-left: 508px;
+padding-left: 0px;
+height: 48px;
+margin-bottom: 33px;
+}
+
+.welcome-add {
+font-family: RobotoSlab;
+color:  #ffffff;
+font-size: 20px;/* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+width: 580px;
+margin-left: 610px;
+text-transform: none;
+    height: 20px;
+    
+}
+
+
+
+.get-in {
+    height: 369px;
+    background-image: url(img/Paralax%20section.png);
+    position: relative;
+}
+
+.get-in__header {
+    position: absolute;
+    width: 454px;
+    height: 68px;
+    margin-left: 573px;
+    margin-top:100;
+    font-family: RobotoSlab;
+    color:  #ffffff;
+    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+}
+
+.get-in__button {
+    width: 175px;
+    height: 50px;
+    position: absolute;
+    margin-top: 222px;
+    margin-left: 710px;
+    border: 1px solid white;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    font-family: RobotoSlab;
+    color:  #ffffff;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+}
+
+.about__us-slider-text {
+    width: 1140px;
+    display: flex;
+    margin-top: 24px;
+    margin: auto;
+}
+
+.text {
+    display: block;
+    width: 263px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.heading-us {
+    padding-top: 100px;
 }
