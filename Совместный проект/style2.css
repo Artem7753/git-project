@@ -122,7 +122,7 @@ margin-bottom: 0;
 }
 
 .about_us-wrapper {
-    background: #e3e3e3;
+    background: #f8f8f8;
     width: 1600px;
     margin-bottom: 20px;
     height: 852px;
@@ -233,6 +233,7 @@ text-transform: none;
     height: 369px;
     background-image: url(img/Paralax%20section.png);
     position: relative;
+    
 }
 
 .get-in__header {
@@ -282,4 +283,322 @@ text-transform: none;
 
 .heading-us {
     padding-top: 100px;
+}
+
+.recent-blog-post__article {
+    width: 640px;
+    display: flex;    
+    height: 322px;
+}
+
+.recent-blog-post__picture {
+    width: 460px;
+    height: 322px;
+    margin-right: 40px;
+}
+
+.recent-blog-post {
+    display: flex;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: 75px;
+}
+
+.date {
+    width: 76px;
+    height: 76px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid black;
+    font-family: Montserrat;
+    color:  #777777;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.recent-blog-post__article__heading {
+    font-family: Montserrat;
+    color:  #c0301c;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 105px;
+    text-transform: none;
+}
+
+.recent-blog-post__article__author {
+    width: 199px;
+    font-family: RobotoSlab;
+    color:  #777777;
+    font-size: 13px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    margin-top: 45px;
+    margin-left: 105px;
+    position: absolute;
+}
+
+.red {
+    color: red;
+}
+
+.recent-blog-post__article__text {
+    margin-top: 100px;
+    font-family: RobotoSlab;
+    color:  #555555;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    position: absolute;
+    width: 640px;
+    height: 110px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.read-more {  
+    font-family: RobotoSlab;
+    color:  #c0301c;
+    font-size: 13px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;  
+    width: 88px;
+    height: 20px;
+    position: absolute;
+    margin-top: 240px;
+}
+
+.underline {
+    margin-left: 230px; 
+    width: 1140px;
+    border: none;
+    height: 1px;
+    color: lightgrey;
+    background: lightgrey;
+    margin-top: 40px;
+    margin-bottom: -35px;
+}
+
+
+
+.labels__logo {
+    margin: auto;
+    margin-bottom: 75px;
+    width: 900px;
+    height: 50px;
+    padding-top: 100px;
+}
+
+.labels {
+    background-color:  #f8f8f8;
+    width: 1600px;
+    height: 477px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.label__text {
+    font-family: RobotoSlab;
+    color:  #555555;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 30px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    width: 763px;
+    height: 109px;
+    margin: auto;
+}
+
+.John {
+    font-family: RobotoSlab;
+    color:  #555555;
+    font-size: 20px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 30px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    width: 220px;
+    margin: auto;
+}
+
+.label__logo-img {
+    padding-top: 100px;
+}
+
+.labels__rounds {
+    width: 60px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.round-red {
+    width: 15px;
+    border-radius: 50%;
+    background: red;
+    height: 15px;
+}
+
+.round {
+    
+    width: 15px;
+    border-radius: 50%;
+    background: grey;
+    height: 15px;
+}
+
+.get-in-touch__describe {
+    width: 390px;
+    height: 400px;  
+}
+
+.get-in-touch__input {
+    width: 740px;
+    height: 400px;
+}
+
+.get-in-touch {
+        display: flex;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: 75px;
+    margin-bottom: -50px;
+}
+
+.touch {
+    margin-top: 50px;
+    border: 1px solid black;
+    height: 660px;
+    width: 1140px;
+    background: red;
+}
+
+
+
+
+
+
+
+.get-in_icon {
+    width: 15px;
+    height: 75px;
+    float: left;
+    margin-top: 10px;
+}
+
+.get-in_head-adress {
+    width: 380px;
+    text-align: left;
+    font-family: Montserrat;
+color: #555555;
+font-size: 14px; /* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+line-height: 30px; /* Приближение из-за подстановки шрифтов */
+    margin-left: 27px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    
+}
+
+.get-in_adress {
+    width: 205px;
+    font-family: RobotoSlab;
+color: #555555;
+font-size: 12px; /* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+line-height: 20px; /* Приближение из-за подстановки шрифтов */
+text-align: left;
+    margin-left: 27px;
+}
+
+.icon2 {
+    margin-top: 20px;
+}
+
+.typetext {
+    width: 350px;
+    height: 45px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.e-mail {
+        width: 350px;
+    height: 45px;
+}
+
+.subject {
+        width: 350px;
+    height: 45px;
+    margin-right: 30px;
+}
+
+.company_name {
+        width: 350px;
+    height: 45px;
+}
+
+.comment {
+        width: 730px;
+    height: 105px;
+    margin-top: 30px;
+}
+
+.button_comment {
+    width: 170px;
+    height: 45px;
+    margin-top: 30px;
+}
+
+.label-send {
+    margin-top: -30px;
+}
+
+.round-tw {
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+    width: 31px;
+    height: 31px;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 5px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.heading-tw {
+    width: 200px;
+    text-align: center;
+        margin-top: 100px;
+    margin-left: 685px;
+}
+
+.footer-describe {
+    font-family: RobotoSlab;
+color: #ffffff;
+font-size: 12px; /* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+line-height: 20px; /* Приближение из-за подстановки шрифтов */
+text-align: left;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 666px;
+}
+
+.footer-hr {
+    margin-left: 745px; 
+    width: 50px;
+    border: none;
+    height: 2px;
+    color: white;
+    background: white;
+    margin-top: 166px; 
+    position: absolute;
 }

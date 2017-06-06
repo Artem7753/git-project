@@ -126,6 +126,7 @@ h6 {
 
 .heading {
 	text-align: center;
+    margin-top: 100px;
 }
 
 .heading h2 {
@@ -198,6 +199,7 @@ h6 {
 .latest-works {
 	width: 100%;
 	height: 1200px;
+    margin-top: 100px;
 }
 
 .navbar-wrapper {
@@ -291,3 +293,5 @@ ul li a:hover {
 }
 .nav-wr
 }
+
+
