@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oop</title>
+    <script>
+        //Функция-конструктор
+        function Container(id) {
+            if(id !== undefined){
+                this.id = id;
+            }
+            this.htmlCode = '';
+//            this.render = function () {
+//                return this.htmlCode;
+//            }
+        }
+
+        Container.prototype.render = function () {
+            return this.htmlCode;
+        };
+
+        function Menu(myId, myClass, myItems) {
+            Container.call(this, myId);
+
+            this.className = myClass;
+            this.items = myItems;
+        }
+
+		Container.prototype.remove = function(){
+			removeEl.call(this);
+		}
+		function removeEl(){
+			document.getElementById(this.id).remove();
+		}
+        //Наследование в ES5
+        Menu.prototype = Object.create(Container.prototype);
+        Menu.prototype.constructor = Menu;
+
+        Menu.prototype.render = function () {
+            var result = '<ul class="' + this.className + '" id="' + this.id + '">';
+            for (var i = 0; i < this.items.length; i++)
+            {
+                if(this.items[i] instanceof MenuItem)
+                {
+                    result += this.items[i].render();
+                }
+            }
+            result +='</ul>';
+            return result;
+        };
+
+        //Класс MenuItem
+        function MenuItem(href, title,dopitems) {
+            Container.call(this);
+            this.href = href;
+            this.title = title;
+			this.dopitems = dopitems;
+        }
+
+        //Наследование в ES5
+        MenuItem.prototype = Object.create(Container.prototype);
+        MenuItem.prototype.constructor = MenuItem;
+		
+		
+        MenuItem.prototype.render = function () {
+          var result = '<li><a href="'+ this.href + '">' + this.title + '</a>';
+		  if (this.dopitems){
+			  result += "<ul>";
+			  for (var i = 0; i < this.dopitems.length; i++)
+            {
+                if(this.dopitems[i] instanceof dopMenuItem)
+                {
+                    result += this.dopitems[i].render();
+					console.log(dopitems);
+                }
+            }
+            result +="</ul>";
+		  };
+			
+			return result;
+        };
+
+//        var container1 = new Container('menu1');
+//        var container2 = new Container('menu2');
+//
+//        console.log(container1);
+//        console.log(container2);
+
+		dopMenuItem = function(href, title){
+			MenuItem.call(this);
+			this.title = title;
+			this.href = href;
+		}
+		dopMenuItem.prototype.render = function(){
+			return '<li><a href="'+this.href+'">' + this.title + '</a></li>';
+		}
+		
+		dopMenuItem.prototype = Object.create(MenuItem.prototype);
+		dopMenuItem.prototype = dopMenuItem;
+		
+		
+        var menu1 = new Menu('menu1', 'menu1', [
+            new MenuItem('/', 'Главная'),
+            new MenuItem('/about/', 'О нас',[
+				new dopMenuItem('/about/', 'О нас 2'),
+				new dopMenuItem('/about/', 'О нас 3'),
+				new dopMenuItem('/about/', 'О нас 4')
+			]),
+            new MenuItem('/contacts/', 'Контакты')
+        ]);
+        console.log(menu1.items[1].dopitems);
+
+        window.onload = function () {
+            document.getElementById('menu').innerHTML = menu1.render();
+        }
+    </script>
+</head>
+<body>
+<div id="menu"></div>
+</body>
+</html>
